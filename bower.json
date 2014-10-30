@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.0",
+    "octicons": "~2.1.2",
+    "modernizer": "~2.8.2",
+    "modernizr": "~2.8.3"
+  },
+  "devDependencies": {}
+}
