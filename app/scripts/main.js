@@ -1,1 +1,1 @@
-console.log('\'Allo \'Allo!');
+console.log('If you like what you see in my portfolio, contact me at slkennedy@gmail.com');
