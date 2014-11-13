@@ -7,16 +7,16 @@ $('#about-link').click(function() {
 });
 
 $('#skills-link').click(function() {
-	$('html, body').animate ({ scrollTop:420}, 200);
+	$('html, body').animate ({ scrollTop:370}, 200);
 	return false;
 });
 
 $('#works-link').click(function() {
-	$('html, body').animate ({ scrollTop:710}, 200);
+	$('html, body').animate ({ scrollTop:660}, 200);
 	return false;
 });
 
 $('#contact-link').click(function() {
-	$('html, body').animate ({ scrollTop:2056}, 200);
+	$('html, body').animate ({ scrollTop:1885}, 200);
 	return false;
 });

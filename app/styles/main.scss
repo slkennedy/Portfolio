@@ -10,6 +10,9 @@ $white: RGBA(242, 242, 242, 1);
 $primary-bright: RGBA(217, 46, 42, 1);
 $grey: RGBA(76, 76, 76, 1);
 
+$transparent-bright: RGBA(217, 46, 42, 0.35);
+
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -65,7 +68,8 @@ body {
 
     li {
       display: inline-block;
-      font-size: 2em;
+      font-size: 1.5em;
+      text-transform: uppercase;
     }
 
     .menu-items {
@@ -83,9 +87,9 @@ body {
 
   .about {
     text-align: center;
-    height: 500px;
+    height: 450px;
     padding-top: 175px;
-    background: url('../images/glasses.jpg')no-repeat top fixed;
+    background: linear-gradient($transparent-bright, $transparent-bright), url('../images/glasses.jpg')no-repeat top fixed;
     background-size: cover;
 
     p:nth-child(2){
@@ -94,17 +98,19 @@ body {
 
     h2 {
       text-align: center;
-      font-size: 5.5em;
+      font-size: 6em;
       margin: 0;
-      color: $primary-bright;
+      color: $black;
 
     }
 
     p {
-      padding: 0 20px;
+      // padding: 0 20px;
+      max-width: 80%;
+      margin: 0 auto;
       font-size: 2.1em;
       font-weight: 400;
-      color: $primary-bright;
+      color: $black;
 
     }
   }
@@ -187,9 +193,10 @@ body {
       .work-details-container {
         font-size: 1.4em;
         position: absolute;
-        margin-left: 460px;
         top: 0;
+        margin-left: 460px;
         margin-right: 10px;
+        padding: 5px 10px 0  25px;
 
       }
     }
@@ -225,14 +232,19 @@ body {
     padding: 20px;
     background: $white;
     @include border-radius(5px);
+  }
 
-    a {
-      color: $primary-bright;
-      
-      span {
-        font-size: 10em;
-      }
-    }
+  a {
+    color: $primary-bright;
+  }
+
+  span {
+      font-size: 10em;
+  }
+
+  li:hover {
+    background: $black;
+
   }
 
   .thank-you {
