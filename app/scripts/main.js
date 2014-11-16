@@ -12,11 +12,19 @@ $('#skills-link').click(function() {
 });
 
 $('#works-link').click(function() {
-	$('html, body').animate ({ scrollTop:660}, 200);
+	$('html, body').animate ({ scrollTop:653}, 200);
 	return false;
 });
 
 $('#contact-link').click(function() {
-	$('html, body').animate ({ scrollTop:1885}, 200);
+	$('html, body').animate ({ scrollTop:1878}, 200);
 	return false;
 });
+
+//logo appearance
+// $(window).scroll(function (){
+// 	var scrollTop = $(window).scrollTop();
+// 	if (scrollTop >= $('.about').offset().top) {
+// 		$('.logo-name')
+// 	}
+// })
