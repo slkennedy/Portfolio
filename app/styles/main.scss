@@ -124,6 +124,39 @@ body {
       color: $black;
 
     }
+
+    // ul {
+    //   margin: 0;
+    //   padding: 0;
+    //   width: 100%;
+    //   text-align: center;
+    //   margin-bottom: 40px;
+    // }
+
+    // li {
+    //   display: inline-block;
+    //   width: 20%;
+    //   height: 40%;
+    //   text-align: center;
+    //   margin: 10px;
+    //   padding: 10px;
+    //   background: $white;
+    //   @include border-radius(5px);
+    // }
+
+    // a {
+    //   color: $primary-bright;
+    // }
+
+    // span {
+    //     font-size: 3em;
+    //     color: $primary-bright;
+    // }
+
+    // li:hover {
+    //   background: $black;
+
+    // }
   }
 
   .skills {
@@ -241,7 +274,7 @@ body {
 
   li {
     display: inline-block;
-    width: 40%;
+    width: 30%;
     height: 40%;
     text-align: center;
     margin: 10px;
@@ -255,7 +288,7 @@ body {
   }
 
   span {
-      font-size: 10em;
+      font-size: 8em;
   }
 
   li:hover {
