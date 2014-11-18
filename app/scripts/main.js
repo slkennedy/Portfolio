@@ -1,30 +1,28 @@
-console.log('If you like what you see in my portfolio, contact me at slkennedy@gmail.com');
+(function (){
 
-//Menu scroll script
-$('#about-link').click(function() {
-	$('html, body').animate ({ scrollTop:0}, 350);
-	return false;
-});
+'use strict';
 
-$('#skills-link').click(function() {
-	$('html, body').animate ({ scrollTop:370}, 350);
-	return false;
-});
+	console.log('If you like what you see in my portfolio, contact me at slkennedy@gmail.com');
 
-$('#works-link').click(function() {
-	$('html, body').animate ({ scrollTop:653}, 350);
-	return false;
-});
+	//Menu scroll script
+	$('#about-link').click(function() {
+		$('html, body').animate ({ scrollTop:0}, 350);
+		return false;
+	});
 
-$('#contact-link').click(function() {
-	$('html, body').animate ({ scrollTop:1878}, 350);
-	return false;
-});
+	$('#skills-link').click(function() {
+		$('html, body').animate ({ scrollTop:370}, 350);
+		return false;
+	});
 
-//logo appearance
-// $(window).scroll(function (){
-// 	var scrollTop = $(window).scrollTop();
-// 	if (scrollTop >= $('.about').offset().top) {
-// 		$('.logo-name')
-// 	}
-// })
+	$('#works-link').click(function() {
+		$('html, body').animate ({ scrollTop:653}, 350);
+		return false;
+	});
+
+	$('#contact-link').click(function() {
+		$('html, body').animate ({ scrollTop:1878}, 350);
+		return false;
+	});
+
+})();
