@@ -40,6 +40,10 @@ body {
   position: fixed;
   z-index: 10;
   background: $black;
+  
+  .mobile-menu {
+    display: none;
+  }
 
   .logo-name {
     color: $primary-bright;
@@ -85,7 +89,6 @@ body {
     background: $transparent-white;
     float:right;
     display: block;
-    margin-top: 80px;
     margin-right: 20px;
     @include border-radius(0 0 5px 5px);
 
@@ -115,8 +118,8 @@ body {
 
   .about {
     text-align: center;
-    height: 450px;
-    padding-top: 175px;
+    height: 395px;
+    padding-top: 100px;
     background: linear-gradient($transparent-bright, $transparent-bright), url('../images/glasses.jpg')no-repeat top fixed;
     background-size: cover;
 
@@ -172,6 +175,10 @@ body {
       margin: 10px 0;
       padding: 0 10px;
     }
+  }
+  
+  .mobile-work {
+    display: none;
   }
 
   .work {
@@ -284,62 +291,175 @@ body {
   }
 }
 
-// /* Smartphones (portrait) ----------- */
-// @media only screen 
-// and (max-width : 320px) {
-//   .nav-menu {
-//     width: 15%;
-//     height: 100%;
-//     position: fixed;
-//     font-size: 1em;
-//     padding: 0;
-//     margin: 0;
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
 
-//     h3 {
-//       font-size: 1em;
-//       margin: 0;
-//       padding: 0;
-
-//     }
+  .menu {
+    display: none;
+  }
     
-//     ul {
-//       padding: 0;
-//       margin-left: 0;
-//       float:left;   
-//     }
+  .logo-name {
+    display: none;
+  }
 
-//     li {
-//       margin: 0;
-//       padding: 0;
-//     }
+  .menu-list {
+    display: none;
+  }
 
-//     a {
-//       text-decoration: none;
-//       margin: 0;
-//       padding: 0;
-//     }
-//   }
-// }
-// /* iPads (landscape) ----------- */
-// @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) 
-// and (orientation : landscape) {
-// /* Styles */
-// }
+  .section-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 0;
 
-// /* iPads (portrait) ----------- */
-// @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) 
-// and (orientation : portrait) {
-// /* Styles */
-// }
+    .about-menu {
+      background: $black;
+      position: relative;
+      width: 100%;
+      margin: 0;
+      @include border-radius(0);
 
-// /* Desktops and laptops ----------- */
-// @media only screen 
-// and (min-width : 1224px) {
-// /* Styles */
-// }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+
+      li {
+        display: inline-block;
+        font-size: 2.5em;
+        padding: 10px 20px;
+      }
+
+      a {
+        color: $primary-bright;
+        text-decoration: none;
+
+      }
+    }
+
+    .about {
+      background-size: 200%;
+      display: inline-block;
+      padding: 20px 0;
+
+      h2 {
+        font-size: 5em;
+        color: $white;
+      }
+
+      p {
+        max-width: 88%;
+        padding: 0;
+        margin: 0 auto;
+        font-size: 1.75em;
+        color: $white;
+
+      }
+    }
+
+    .skills {
+
+      ul {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 10px 0 40px;
+        text-align: center;
+        font-size: 1.75em;
+      }
+
+      li {
+        margin: 0;
+        width: 40%;
+        text-align: center;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+
+      li:nth-child(odd){
+        margin-right: 20px;
+      }
+
+      li:nth-child(11n) {
+        vertical-align: top;
+      }
+    }
+
+    .work {
+      display: none;
+    }
+
+    .mobile-work {
+      display: block;
+      width: 100%;
+      background: $grey;
+      padding-bottom: 30px;
+
+      h2 {
+        text-align: center;
+        font-size: 4em;    
+        padding: 40px 0 5px;
+        margin: 0;
+        color: $white;
+
+      }
+
+      img {
+        display: block;
+        max-width: 90%;
+        margin: 0 auto;
+        border-left: 2px solid $black;
+        border-right: 2px solid $black;
+        border-top: 2px solid $black;
+        @include border-radius(5px 5px 0 0);
+
+      }
+
+      .work-details-container {
+        display: block;
+        max-width: 90%;
+        font-size: 1.4em;
+        color: $grey;
+        margin: 0 auto 20px;
+        padding: 5px 20px 20px;
+        background: $white;
+        border-left: 2px solid $black;
+        border-right: 2px solid $black;
+        border-bottom: 2px solid $black;
+        @include border-radius(0 0 5px 5px);
+
+        h3 {
+          margin-top: 5px;
+        }
+      
+
+        a {
+          background: linear-gradient( RGBA(0,0,0,0.7), RGBA(0,0,0,0.7)), url('../images/Dark-Halftone-Screen-Small.png')repeat center;
+          color: $white;
+          display: inline-block;
+          padding: 5px;
+          margin: 10px 5px 0 0;
+          @include border-radius(5px);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .contact-footer {
+
+    li {
+      width: 40%;
+    }
+
+    .thank-you {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
 
 

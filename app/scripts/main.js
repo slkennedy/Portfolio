@@ -11,17 +11,17 @@
 	});
 
 	$('#skills-link').click(function() {
-		$('html, body').animate ({ scrollTop:370}, 350);
+		$('html, body').animate ({ scrollTop:315}, 350);
 		return false;
 	});
 
 	$('#works-link').click(function() {
-		$('html, body').animate ({ scrollTop:653}, 350);
+		$('html, body').animate ({ scrollTop:598}, 350);
 		return false;
 	});
 
 	$('#contact-link').click(function() {
-		$('html, body').animate ({ scrollTop:1878}, 350);
+		$('html, body').animate ({ scrollTop:1823}, 350);
 		return false;
 	});
 
