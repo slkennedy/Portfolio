@@ -34,6 +34,7 @@ body {
 }
 
 .menu {
+  display: none;
   margin: 0;
   width: 100%;
   min-height: 80px;
@@ -374,7 +375,7 @@ body {
   }
 }
 
-/* Smartphones (portrait) ----------- */
+/* Smartphones portrait and landscape */
 @media only screen 
 and (min-device-width: 320px)
 and (max-device-width: 480px) {
@@ -544,5 +545,16 @@ and (max-device-width: 480px) {
   }
 }
 
+/* iPad portrait and landscape */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .section-wrapper {
+    .about {
+      background: linear-gradient($transparent-bright, $transparent-bright), url('../images/glasses.jpg')no-repeat top fixed;
+      background-size: cover;
+    }
+  }
+}
 
 
