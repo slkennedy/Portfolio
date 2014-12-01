@@ -34,12 +34,12 @@ body {
 }
 
 .menu {
-  display: none;
+  // display: none;
   margin: 0;
   width: 100%;
   min-height: 80px;
   position: fixed;
-  z-index: 10;
+  z-index: 5;
   background: $black;
   
   .mobile-menu {
@@ -84,18 +84,17 @@ body {
 
 .section-wrapper {
   position: relative;
-  z-index: 10;
 
   .about-menu {
     background: $transparent-white;
     position: absolute;
     top: 0px;
     right: 20px;
-    z-index: 10;
     // display: block;
     // margin-right: 20px;
     // margin-top: 80px;
     @include border-radius(0 0 5px 5px);
+    z-index: 10;
 
     ul {
       list-style: none;
